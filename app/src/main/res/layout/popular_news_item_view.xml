@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/safe_margin"
+    android:background="@drawable/home_tab_selector"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/digital_growth" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cv_image"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/time"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/opensans_regular"
+                android:gravity="bottom"
+                android:text="10 Feb, 2022"
+                android:textColor="@color/appBlackLight"
+                android:textSize="@dimen/text_small" />
+
+            <TextView
+                android:id="@+id/tv_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cv_image"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/likes"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/opensans_regular"
+                android:gravity="bottom"
+                android:text="58"
+                android:textColor="@color/appBlackLight"
+                android:textSize="@dimen/text_small" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_toStartOf="@+id/cv_image">
+
+                <TextView
+                    android:id="@+id/tv_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_bold"
+                    android:maxLines="2"
+                    android:text="2022 Digital Growth Award Nominations Open"
+                    android:textColor="@color/appBlackDark"
+                    android:textSize="@dimen/text_medium0" />
+
+                <TextView
+                    android:id="@+id/tv_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_text"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:maxLines="2"
+                    android:text="World Council member associations and credit unions are encouraged to apply"
+                    android:textColor="@color/appBlackDark"
+                    android:textSize="@dimen/text_medium0" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

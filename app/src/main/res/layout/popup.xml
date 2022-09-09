@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="-15dp"
+    app:cardCornerRadius="15dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_address_popup"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/safe_margin"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_address_popup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_address_popup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/opensans_semi_bold"
+                android:text="Most Recent"
+                android:textColor="@color/appBlackDark"
+                android:textSize="@dimen/text_medium" />
+
+            <TextView
+                android:id="@+id/tv_select_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/grey_bg_color"
+                android:fontFamily="@font/opensans_semi_bold"
+                android:padding="10dp"
+                android:text="Most Popular"
+                android:textColor="@color/appBlackDark"
+                android:textSize="@dimen/text_medium" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

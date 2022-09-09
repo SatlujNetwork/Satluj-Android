@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tvapp.TVActivity">
+
+    <ImageView
+        android:id="@+id/openAppBT"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/opensans_extra_bold"
+        android:src="@drawable/splash"
+        android:scaleType="centerCrop"
+        android:textSize="20sp">
+
+    </ImageView>
+
+</RelativeLayout>

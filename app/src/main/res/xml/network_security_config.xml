@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">satlujnetwork.com</domain>
+        <domain includeSubdomains="true">news.apollow.com</domain>
+        <domain includeSubdomains="true">www.youtube.com/</domain>
+    </domain-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

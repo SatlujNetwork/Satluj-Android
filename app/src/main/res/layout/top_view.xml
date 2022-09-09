@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_top_view"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/safe_margin"
+    android:layout_height="?attr/actionBarSize">
+
+    <ImageView
+        android:id="@+id/iv_back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/back_black"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/back_black"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/opensans_regular"
+        android:padding="10dp"
+        android:text="Skip"
+        android:textColor="@color/appBlackDark"
+        android:textSize="@dimen/text_medium"
+        android:visibility="gone" />
+</RelativeLayout>

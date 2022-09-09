@@ -1,0 +1,70 @@
+{
+  "project_info": {
+    "project_number": "841220371530",
+    "project_id": "news-app-92676",
+    "storage_bucket": "news-app-92676.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841220371530:android:6185d5aa5b7a0ad62922b3",
+        "android_client_info": {
+          "package_name": "com.emobx.news"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "841220371530-5la5p3j25qji99nul19h0j13c7a52o13.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.emobx.news",
+            "certificate_hash": "006deaea011f5f1b87a158e71f3d98af5536e5c1"
+          }
+        },
+        {
+          "client_id": "841220371530-cmc27tk7abv2eipnbbf4cgff4fpcngrp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.emobx.news",
+            "certificate_hash": "ee6c3e1cf2cd9a73b9b02fe8ec8bd3a1794b55fb"
+          }
+        },
+        {
+          "client_id": "841220371530-h6bom171nen19rklsr362ck3q15ntpte.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.emobx.news",
+            "certificate_hash": "6491fba253dbd5b6802397abf68dfa5c584300c5"
+          }
+        },
+        {
+          "client_id": "841220371530-gip0b6v0und5mqt3q6gqeck1s7tr0853.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkZeB0Cmc-AMoTHHqx7dBortBlf51wNn8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "841220371530-gip0b6v0und5mqt3q6gqeck1s7tr0853.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "841220371530-9kmjtfvo5ge6p2cu8c2ogcl8804srr34.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "app.Satluj-Network"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

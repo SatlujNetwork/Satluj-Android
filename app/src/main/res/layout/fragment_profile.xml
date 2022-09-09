@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ProfileFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/safe_margin"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profile1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/images" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_profile1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/opensans_bold"
+                android:inputType="textCapSentences"
+                android:singleLine="true"
+                android:text="John Deo"
+                android:textColor="@color/appBlackDark"
+                android:textSize="@dimen/text_large" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tv_name"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/email"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/opensans_semi_bold"
+                    android:gravity="center_vertical"
+                    android:text="johndoe@gmail.com"
+                    android:textColor="@color/appBlackDark"
+                    android:textSize="@dimen/text_medium" />
+
+                <TextView
+                    android:id="@+id/tv_edit_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:drawableStart="@drawable/edit_profile"
+                    android:drawableEnd="@drawable/right_arrow"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/opensans_semi_bold"
+                    android:gravity="center_vertical"
+                    android:text="Edit Profile"
+                    android:textColor="@color/appBlackDark"
+                    android:textSize="@dimen/text_medium" />
+
+                <TextView
+                    android:id="@+id/tv_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:drawableStart="@drawable/logout"
+                    android:drawableEnd="@drawable/right_arrow"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/opensans_semi_bold"
+                    android:gravity="center_vertical"
+                    android:text="Logout"
+                    android:textColor="@color/appBlackDark"
+                    android:textSize="@dimen/text_medium" />
+
+                <TextView
+                    android:id="@+id/tv_general_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/opensans_semi_bold"
+                    android:gravity="center_vertical"
+                    android:text="General Settings"
+                    android:textColor="@color/appBlackDark"
+                    android:textSize="@dimen/text_large" />
+
+                <TextView
+                    android:id="@+id/tv_bookmarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:drawableStart="@drawable/bookmark"
+                    android:drawableEnd="@drawable/right_arrow"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/opensans_semi_bold"
+                    android:gravity="center_vertical"
+                    android:text="Bookmarks"
+                    android:textColor="@color/appBlackDark"
+                    android:textSize="@dimen/text_medium" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_getNotification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/get_notification"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/opensans_semi_bold"
+                        android:gravity="center_vertical"
+                        android:text="Get Notification"
+                        android:textColor="@color/appBlackDark"
+                        android:textSize="@dimen/text_medium" />
+
+                    <ImageView
+                        android:id="@+id/iv_getNotification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/no_selectswitch" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:drawableStart="@drawable/contact_us"
+                    android:drawableEnd="@drawable/right_arrow"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/opensans_semi_bold"
+                    android:gravity="center_vertical"
+                    android:text="Contact Us"
+                    android:textColor="@color/appBlackDark"
+                    android:textSize="@dimen/text_medium" />
+
+                <TextView
+                    android:id="@+id/tv_privacy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:drawableStart="@drawable/privacy_policy"
+                    android:drawableEnd="@drawable/right_arrow"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/opensans_semi_bold"
+                    android:gravity="center_vertical"
+                    android:text="Privacy Policy"
+                    android:textColor="@color/appBlackDark"
+                    android:textSize="@dimen/text_medium" />
+
+                <TextView
+                    android:id="@+id/tv_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:drawableStart="@drawable/about_us"
+                    android:drawableEnd="@drawable/right_arrow"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/opensans_semi_bold"
+                    android:gravity="center_vertical"
+                    android:text="About Us"
+                    android:textColor="@color/appBlackDark"
+                    android:textSize="@dimen/text_medium" />
+
+                <TextView
+                    android:id="@+id/tv_theme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"
+                    android:drawableStart="@drawable/theme"
+                    android:drawableEnd="@drawable/right_arrow"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/opensans_semi_bold"
+                    android:gravity="center_vertical"
+                    android:text="Theme"
+                    android:textColor="@color/appBlackDark"
+                    android:textSize="@dimen/text_medium" />
+
+                <TextView
+                    android:id="@+id/tv_delete_account"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_corner_button_white"
+                    android:fontFamily="@font/opensans_semi_bold"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Delete Account"
+                    android:textColor="@color/appBlue"
+                    android:textSize="@dimen/text_medium" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

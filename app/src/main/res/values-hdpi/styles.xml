@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyTabLayout" parent="Base.Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/MyTabTextAppearance</item>
+    </style>
+
+    <style name="MyTabTextAppearance" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/appBlackDark</item>
+        <item name="android:background">@drawable/home_tab_selector</item>
+        <item name="android:fontFamily">@font/opensans_semi_bold</item>
+    </style>
+
+    <style name="LeanbackPreferences" parent="Theme.Leanback">
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Leanback</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:colorPrimary">@color/appGooglebg</item>
+    </style>
+</resources>

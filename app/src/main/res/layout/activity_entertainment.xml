@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.EntertainmentActivity">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/pull_refresh"
+        android:layout_margin="@dimen/safe_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_mainImage"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/iv_back_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="40dp"
+                android:padding="10dp"
+                android:src="@drawable/back_white" />
+
+            <ImageView
+                android:id="@+id/iv_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp"
+                android:src="@drawable/share" />
+
+            <TextView
+                android:id="@+id/tv_entertainmenttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_mainImage"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/opensans_semi_bold"
+                android:paddingBottom="5dp"
+                android:text="Entertainment"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_large"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rl_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/iv_mainImage"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_entertainment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/corner_text_round"
+                    android:backgroundTint="@color/viewColor"
+                    android:fontFamily="@font/opensans_semi_bold"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="Entertainment"
+                    android:textColor="@color/appBlackDark"
+                    android:textSize="@dimen/text_medium" />
+
+                <ImageView
+                    android:id="@+id/iv_bookmark_click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:padding="10dp"
+                    android:src="@drawable/copy" />
+
+                <ImageView
+                    android:id="@+id/iv_like_click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toStartOf="@+id/iv_bookmark_click"
+                    android:padding="10dp"
+                    android:src="@drawable/like" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_entertainment"
+                    android:layout_marginStart="20dp"
+                    android:drawableStart="@drawable/time"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:gravity="bottom"
+                    android:text="10 Feb, 2022"
+                    android:textColor="@color/appBlackLight"
+                    android:textSize="@dimen/text_small" />
+
+                <TextView
+                    android:id="@+id/tv_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_time"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/opensans_bold"
+                    android:gravity="bottom"
+                    android:textColor="@color/appBlackDark"
+                    android:textSize="@dimen/text_medium" />
+
+                <TextView
+                    android:id="@+id/tv_heading1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_heading"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:gravity="bottom"
+                    android:text="Oscars 2022: Fans can now vote for their favourite movie of the year on Twitter, and the winner will be announced live during this year's ceremony."
+                    android:textColor="@color/appBlackDark"
+                    android:textSize="@dimen/text_medium" />
+
+                <LinearLayout
+                    android:id="@+id/ll_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_heading1"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_likes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:drawableStart="@drawable/likes"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="bottom"
+                        android:text="58 people like this"
+                        android:textColor="@color/appBlackLight"
+                        android:textSize="@dimen/text_small" />
+
+                    <TextView
+                        android:id="@+id/tv_comments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/tv_likes"
+                        android:background="@drawable/corner_text_round"
+                        android:backgroundTint="@color/appBlue"
+                        android:drawableStart="@drawable/comment"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="bottom"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="Comments"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_small" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/ll_comment"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="Days after announcing the nominees for the 94th Academy Awards, the Academy of Motion Picture Arts and Sciences on Monday said that it will introduce a new category at this year’s Oscars — the fan-favourite film. Audiences can vote for their favourite movie of the year on a special website, or by using the #OscarsFanFavorite hashtag.\nThe winning title will be announced live during the 2022 Oscars ceremony, on March 27. The voting will be open till March 3.\n\nDays after announcing the nominees for the 94th Academy Awards, the Academy of Motion Picture Arts and Sciences on Monday said that it will introduce a new category at this year’s Oscars — the fan-favourite film. Audiences can vote for their favourite movie of the year on a special website, or by using the #OscarsFanFavorite hashtag.\nThe winning title will be announced live during the 2022 Oscars ceremony, on March 27. The voting will be open till March 3."
+                    android:textColor="@color/appBlackDark"
+                    android:textSize="@dimen/text_medium" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/iv_mainImage"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+        </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

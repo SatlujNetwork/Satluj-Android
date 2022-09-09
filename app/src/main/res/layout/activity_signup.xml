@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activities.SignupSocialActivity">
+
+    <include layout="@layout/top_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/safe_margin"
+        android:layout_below="@+id/rl_top_view">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="80dp"
+                    android:src="@drawable/logo" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_welcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_logo"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:id="@+id/tv_welcom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="@string/welcome_to"
+                        android:textColor="@color/appBlackDark"
+                        android:textSize="@dimen/text_large" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/tv_welcom"
+                        android:fontFamily="@font/opensans_bold"
+                        android:text="@string/satluj_network"
+                        android:textAllCaps="true"
+                        android:textColor="@color/appBlue"
+                        android:textSize="@dimen/text_large" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_welcom"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="@string/sign_in_to_continue"
+                        android:textColor="@color/appBlackLight"
+                        android:textSize="@dimen/text_small" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_google"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_welcome"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/corner_round"
+                    android:backgroundTint="@color/appGooglebg">
+
+                    <ImageView
+                        android:id="@+id/iv_google"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="50dp"
+                        android:src="@drawable/google" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/iv_google"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:text="@string/sign_in_with_google"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_large" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_facebook"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_google"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/corner_round"
+                    android:backgroundTint="@color/appFacebookbg"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_facebook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="50dp"
+                        android:src="@drawable/facebook" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_toEndOf="@+id/iv_facebook"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:text="@string/sign_in_with_facebook"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_large" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_dont_social"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_facebook"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_dont_social"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="@string/don_t_have_social_accounts"
+                        android:textColor="@color/appBlackDark"
+                        android:textSize="@dimen/text_medium" />
+
+                    <TextView
+                        android:id="@+id/tv_continue_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_dont_social"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:drawableEnd="@drawable/email_arrow"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="@string/continue_with_email"
+                        android:textColor="@color/appEmailArrow"
+                        android:textSize="@dimen/text_medium" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/safe_margin"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/entertainment" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/iv_photo"
+        android:fontFamily="@font/opensans_semi_bold"
+        android:maxLines="2"
+        android:text="Trumpo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_photo"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/iv_photo"
+        android:fontFamily="@font/opensans_semi_bold"
+        android:text="20 November 2020"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/appBlackLight" />
+
+    <TextView
+        android:id="@+id/tv_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_photo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:drawableStart="@drawable/likes"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/opensans_semi_bold"
+        android:text="6"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/appBlackLight" />
+
+</RelativeLayout>

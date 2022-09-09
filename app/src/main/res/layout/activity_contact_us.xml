@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ContactUsActivity">
+
+    <include layout="@layout/home_top_view" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/safe_margin"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_top_view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/opensans_regular"
+                android:text="Name"
+                android:textColor="@color/appBlue"
+                android:textSize="@dimen/text_medium" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/white"
+                android:fontFamily="@font/opensans_semi_bold"
+                android:gravity="start"
+                android:hint="Enter name"
+                android:inputType="textCapSentences"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/appBlackDark"
+                android:textColorHint="@color/appBlackLight"
+                android:textSize="@dimen/text_medium" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/viewColor" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/opensans_regular"
+                android:text="Email"
+                android:textColor="@color/appBlue"
+                android:textSize="@dimen/text_medium" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/white"
+                android:fontFamily="@font/opensans_semi_bold"
+                android:gravity="start"
+                android:hint="Enter email"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/appBlackDark"
+                android:textColorHint="@color/appBlackLight"
+                android:textSize="@dimen/text_medium" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/viewColor" />
+
+            <TextView
+                android:id="@+id/tv_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/opensans_regular"
+                android:text="Comment"
+                android:textColor="@color/appBlue"
+                android:textSize="@dimen/text_medium" />
+
+            <EditText
+                android:id="@+id/et_comment"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/corner_round_edit_text"
+                android:fontFamily="@font/opensans_semi_bold"
+                android:gravity="start"
+                android:hint="Enter comment"
+                android:maxLines="5"
+                android:padding="5dp"
+                android:textColor="@color/appBlackDark"
+                android:textColorHint="@color/appBlackLight"
+                android:textSize="@dimen/text_medium" />
+
+
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_comment"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/corner_round"
+                android:backgroundTint="@color/appBlue"
+                android:fontFamily="@font/opensans_semi_bold"
+                android:gravity="center"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_medium" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>
